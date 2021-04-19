@@ -7,7 +7,7 @@ namespace Ejercicios_.NET_1_16
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Ejercicio6();
+            Ejercicio7();
         }
 
         public static void Ejercicio1()
@@ -90,8 +90,30 @@ namespace Ejercicios_.NET_1_16
 
         public static void Ejercicio7()
         {
+            int numero0= Convert.ToInt32(Console.ReadLine());
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+            int nMayor = 0;
+            int nMenor = 0;
 
+            if (numero0 > numero1)
+            {
+                nMayor = numero0;
+                nMenor = numero1;
+            }
+            else
+            {
+                nMayor = numero1;
+                nMenor = numero0;
+            }
+        
+            for(int x = nMenor; x <= nMayor; x++)
+            {
+                Console.WriteLine(x);
+            }
         }
+
+
+
 
     }
 }
